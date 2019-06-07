@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rgb color game</title>
+    <meta
+      name="description"
+      content="Frontend project - a game to test your knowledge of the rgb color model."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <noscript
+      >For full functionality of this site it is necessary to enable JavaScript.
+      Here are the
+      <a href="https://www.enable-javascript.com/">
+        instructions how to enable JavaScript in your web browser</a
+      >.
+    </noscript>
+    <!-- // [START main]  -->
+    <main class="contents">
+      <section class="project">
+        <h1 class="project__heading">BBC INFOBANK</h1>
+        <p class="project__description">
+          The project tests the knowledge of rgb. The user's task is to match a
+          random rgb string with one of the six squares. Each wrong guess causes
+          the clicked square to disappear and the loss of one point. After five
+          rounds, the game starts again. The easy level offers the choice of
+          three squares, the hard level has six squares to choose from.
+        </p>
+        <br />
+
+        <div class="project__links">
+          <h3 class="project__subheading">Links</h3>
+          <a href="https://github.com/darco2018/bbc-news-api-processor.git"
+            >View code on Github</a
+          ><br />
+
+          <a href="color-game/index.html">View live version</a>
+        </div>
+        <div class="project__img">
+          <img src="../img/rgb-color-game.png" alt="rgb colors model" />
+        </div>
+        <h3 class="project__subheading">Technologies and tools</h3>
+        <ul class="project__tools">
+          <li>HTML, CSS, SASS</li>
+          <li>vanilla Java Script</li>
+          <li>Visual Studio Code</li>
+          <li>npm, webpack</li>
+          <li>stylelint, prettier, eslint</li>
+          <li>babel, browserlist, devServer, PostCSS, others</li>
+        </ul>
+        <h3 class="project__subheading">Notable features</h3>
+        <ul class="project__features">
+          <li>JS module pattern</li>
+          <li>Responsive</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3 class="project__subheading">Notes</h3>
+        <ul class="project__features">
+          <li>clip-path: https://bennettfeely.com/clippy/</li>
+          <li>favicon: https://bennettfeely.com/clippy/</li>
+          <li>box-shadow: 31px 29px 35px 49px rgba(0, 0, 0, 0.76);</li>
+          <li>
+            Add type to function signature in VS:
+            <pre>
+                /**
+                * @param {HTMLElement} elem
+                * @param {string} attribute
+                */ </pre
+            >
+          </li>
+          <li>browserlist for 92% in Poland</li>
+          <li>generated custom modernizr.js - but not applied</li>
+          <li>ES6 modules & CommonJS modules</li>
+          <li>
+            <pre>
+ if (!(typeof attribute === "string"))
+                    throw Error("invalid argument: attribute must be a String");</pre
+            >
+          </li>
+          <li>
+            USED SASS for the first time main.scss which imports other css
+            files, eg _normalize.css, _main.css ( underscore means compiler
+            won't compile it into separate file
+          </li>
+          <li>
+            I split boilerplate main.css into abstracts, basestyle, printstyles
+          </li>
+          <li>
+            SASS
+            <pre>
+@function color($color-name) {
+                    @return map-get($colors, $color-name);
+                  }
+                  $breakpoints: (
+  "small": 570px
+);
+@function size($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
+
+@mixin uppercase() {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+background-color: lighten(map-get($colors, dark), 1%);
+
+
+@mixin respon-to($size) {
+  @media only screen and (min-width: #{$size}) {
+    @content;
+  }
+}
+
+@include respon-to(size(small)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+&__wrapper {  -used not to repeat BEM names
+                  </pre
+            >
+          </li>
+
+          <li>
+            Added new comments to package.json to autoprefix, check target
+            browsers & their coverage, doiuse features not supported by target
+            browsers, see the stats
+          </li>
+          <li>Removed pragma from prettier</li>
+        </ul>
+        <h3>Validation</h3>
+        <ul>
+          <li>Remove console, alert, etc in eslint config!</li>
+          <li>remove comments</li>
+          <li>Remove unnecessary links</li>
+          <li>clean package.json dependencies</li>
+             <li>update package.json description</li>
+
+          <li>update github - master branch?!</li>
+          <li>Compress images</li>
+          <li>ww3validator for html</li>
+          <li>ww3validator for css</li>
+          <li>dev Tools - audits (also Chrome Lighthouse extension)</li>
+          <li>dev Tools - coverage</li>
+          <li>https://www.webpagetest.org/</li>
+          <li>https://frontendchecklist.io/</li>
+          <li>
+            https://chrisbateman.github.io/webpack-visualizer/ + npm run stats
+          </li>
+        </ul>
+      </section>
+      <!-- // [END main]  -->
+    </main>
+
+    <!-- // [START scripts]  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

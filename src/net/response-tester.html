@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Response tester game</title>
+    <meta
+      name="description"
+      content="Frontend project - a game to test your reaction time."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <noscript
+      >For full functionality of this site it is necessary to enable JavaScript.
+      Here are the
+      <a href="https://www.enable-javascript.com/">
+        instructions how to enable JavaScript in your web browser</a
+      >.
+    </noscript>
+    <!-- // [START main]  -->
+    <main class="contents">
+      <section class="project">
+        <h1 class="project__heading">BBC INFOBANK</h1>
+        <p class="project__description">
+          The project tests the user's reaction time. The user's task is to
+          click a randomly drawn shape as quickly as possible. The average score
+          for each 8 rounds is calculated. The record score for each player is
+          stored and displayed."
+        </p>
+        <br />
+
+        <div class="project__links">
+          <h3 class="project__subheading">Links</h3>
+          <a href="https://github.com/darco2018/response-tester"
+            >View code on Github</a
+          ><br />
+
+          <a href="response-tester/src/index.html">View live version</a>
+        </div>
+        <div class="project__img">
+          <img src="../img/response-tester550x400.png" alt="rgb colors model" />
+        </div>
+        <h3 class="project__subheading">Technologies and tools</h3>
+        <ul class="project__tools">
+          <li>HTML, CSS</li>
+          <li>vanilla Java Script</li>
+          <li>Visual Studio Code</li>
+          <li>npm, webpack</li>
+          <li>stylelint, prettier, eslint</li>
+          <li>babel, browserlist, devServer, PostCSS, others</li>
+        </ul>
+        <h3 class="project__subheading">Notable features</h3>
+        <ul class="project__features">
+          <li>???</li>
+          <li>???</li>
+        </ul>
+        <h3 class="project__subheading">Notes</h3>
+        <ul class="project__features">
+          <li>
+            Uses my own scripts/fixPathInCssBackground.js to fix bug in
+            dist/....css. When background image is used path is not resolved
+            corrrectly.
+          </li>
+          <li>Uses 'ls' library for read/write from file</li>
+          <li>uses this style: elem.onclick = function(){}</li>
+          <li>
+            ENTER key
+            <pre>
+              const key = e.which || e.keyCode;
+              if (key === 13) {
+                processNameInput();
+              }
+            </pre>
+          </li>
+        </ul>
+        <h3>Validation</h3>
+        <ul>
+          <li>ww3validator for html</li>
+          <li>ww3validator for css</li>
+          <li>dev Tools - audits (also Chrome Lighthouse extension)</li>
+          <li>dev Tools - coverage</li>
+          <li>https://www.webpagetest.org/</li>
+          <li>https://frontendchecklist.io/</li>
+          <li>
+            https://chrisbateman.github.io/webpack-visualizer/ + npm run stats
+          </li>
+        </ul>
+      </section>
+      <!-- // [END main]  -->
+    </main>
+
+    <!-- // [START scripts]  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

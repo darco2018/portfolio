@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rgb color game</title>
+    <meta name="description" content="Code editor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <noscript
+      >For full functionality of this site it is necessary to enable JavaScript.
+      Here are the
+      <a href="https://www.enable-javascript.com/">
+        instructions how to enable JavaScript in your web browser</a
+      >.
+    </noscript>
+    <!-- // [START main]  -->
+    <main class="contents">
+      <section class="project">
+        <h1 class="project__heading">Code editor</h1>
+        <p class="project__description">
+          A simple clone of CodePen.io. The program enables you to edit html,
+          Java Script and CSS displaying a live preview of the code changes.
+        </p>
+        <br />
+
+        <div class="project__links">
+          <h3 class="project__subheading">Links</h3>
+          <a href="https://github.com/darco2018/code-editor"
+            >View code on Github</a
+          ><br />
+
+          <a href="code-editor/index.html">View live version</a>
+        </div>
+        <div class="project__img">
+          <img src="../img/code-editor.png" alt="code editor panels" />
+        </div>
+        <h3 class="project__subheading">Technologies and tools</h3>
+        <ul class="project__tools">
+          <li>HTML, CSS</li>
+          <li>Java Script, JQuery</li>
+          <li>Visual Studio Code</li>
+          <li>npm, webpack</li>
+          <li>stylelint, prettier, eslint</li>
+          <li>babel, browserlist, devServer, PostCSS, others</li>
+        </ul>
+        <h3 class="project__subheading">Notable features</h3>
+        <ul class="project__features">
+          <li></li>
+          <li>Responsive ?!</li>
+          <li></li>
+        </ul>
+        <h3 class="project__subheading">Notes</h3>
+        <ul class="project__features">
+          <li>
+            example how to use textareas as input fieds for iframe, which is th
+            eoutput panel
+          </li>
+          <li>
+            JQuery hover(clb, clb) - the mouse pointer enters and leaves the
+            elements.
+          </li>
+          <li>$(window).height()</li>
+          <li>noOfActivePanels = 4 - $(".hidden").length</li>
+          <li>
+            <pre>
+                    // self-executing function/expression 
+                    const style = (() => {
+                        const styleButtons = function() {
+                          const $buttons = $(".btn");
+                          $buttons.each(function addActiveBehaviour() {       
+                            $(this).click(() => {        
+                            });
+                            $(this).hover(
+                            );
+                          });
+                        };
+                        const setPanelHeight = () => {};
+                        const setPanelWidth = () => {};
+                    
+                        styleButtons();
+                        setPanelHeight();
+                        setPanelWidth();
+                    
+                        return { width: setPanelWidth };
+                      })();
+                      style.width();
+              </pre
+            >
+          </li>
+          <li>JQuery hide()/show()</li>
+          <li>
+            <pre>
+                    $("iframe")
+                    .contents()
+                    .find("head")
+                    .html(`<style>${$cssInput.val()}</style>`);
+             
+                     $("iframe")
+                    .get(0) // get JS obj z JQuery obj
+                    .contentWindow.eval($jsInput.val()); 
+                lub
+                    $("iframe")
+                     .contents()
+                     .find("body")
+                     .append(`<script>${$jsInput.val()}</script>`);
+                                     // $jsInput to textarea
+                    </pre
+            >
+          </li>
+          <li>
+            <pre>
+                    $inputs.each(function addHandlersOnInputPanels() {
+                        // alternative events: "change keyup paste"
+                        $(this).on("input", () => {
+                          renderView();
+                        });
+                      });
+              </pre
+            >
+          </li>
+          <li>
+            <pre>
+<!-- 
+                    <textarea class="panel panel--html"></textarea>
+                    <textarea class="panel panel--css"></textarea>
+                    <textarea class="panel panel--js"></textarea>
+                    <iframe
+                     -->
+              </pre>
+          </li>
+        </ul>
+      </section>
+      <!-- // [END main]  -->
+    </main>
+
+    <!-- // [START scripts]  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

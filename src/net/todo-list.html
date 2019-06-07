@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+    <meta name="description" content="Frontend project - a to-do list" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <noscript
+      >For full functionality of this site it is necessary to enable JavaScript.
+      Here are the
+      <a href="https://www.enable-javascript.com/">
+        instructions how to enable JavaScript in your web browser</a
+      >.
+    </noscript>
+    <!-- // [START main]  -->
+    <main class="contents">
+      <section class="project">
+        <h1 class="project__heading">Todo List</h1>
+        <p class="project__description">
+          A todo list where you can add new todos. You can also mark it as
+          completed or remove it completely.
+        </p>
+        <br />
+
+        <div class="project__links">
+          <h3 class="project__subheading">Links</h3>
+          <a href="https://github.com/darco2018/todo-list"
+            >View code on Github</a
+          ><br />
+
+          <a href="todo-list/index.html">View live version</a>
+        </div>
+        <div class="project__img">
+          <img src="../img/todo-list.png" alt="a todo list" />
+        </div>
+        <h3 class="project__subheading">Technologies and tools</h3>
+        <ul class="project__tools">
+          <li>HTML, CSS, SASS</li>
+          <li>Java Script, JQuery</li>
+          <li>Visual Studio Code</li>
+          <li>npm, webpack</li>
+          <li>stylelint, prettier, eslint</li>
+          <li>babel, browserlist, devServer, PostCSS, others</li>
+        </ul>
+        <h3 class="project__subheading">Notable features</h3>
+        <ul class="project__features">
+          <li>JS module pattern</li>
+          <li>Responsive</li>
+          <li>font awesome, roboto</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3 class="project__subheading">Notes</h3>
+        <ul class="project__features">
+          <li>bgr gradients, box-shadow</li>
+          <li>Fixes footer at the bottom</li>
+          <li>
+            <pre>
+              // JQuery: event delegation with a  ul  and future li items
+              $todoList.on("click", ".list__item", function processCompleted(e) {
+                if (e.target.nodeName.toLowerCase() === "li") {
+                // how to check what element trigerred event
+                }
+              }); 
+            </pre>
+          </li>
+          <li>JQuery fadeIn(), toggleClass(), closest(), remove(), parent()</li>
+        </ul>
+        <h3>Validation</h3>
+        <ul>
+          <li>Remove console, alert, etc in eslint config!</li>
+          <li>remove comments</li>
+          <li>Remove unnecessary links</li>
+          <li>clean package.json dependencies</li>
+          <li>update package.json description</li>
+
+          <li>update github - master branch?!</li>
+          <li>Compress images</li>
+          <li>ww3validator for html</li>
+          <li>ww3validator for css</li>
+          <li>dev Tools - audits (also Chrome Lighthouse extension)</li>
+          <li>dev Tools - coverage</li>
+          <li>https://www.webpagetest.org/</li>
+          <li>https://frontendchecklist.io/</li>
+          <li>
+            https://chrisbateman.github.io/webpack-visualizer/ + npm run stats
+          </li>
+        </ul>
+      </section>
+      <!-- // [END main]  -->
+    </main>
+
+    <!-- // [START scripts]  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
