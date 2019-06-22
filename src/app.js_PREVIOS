@@ -1,0 +1,10 @@
+// import "./public/javascripts/init";
+import "./public/stylesheets/scss/main.scss";
+
+// -------------------------------------------------------------------------
+/* import { $, WOW, bootstrap } from "./public/javascripts/vendor/vendor";
+import { run } from "./public/javascripts/init";
+
+
+run($, WOW, bootstrap);
+ */

@@ -1,0 +1,13 @@
+.card {
+  min-width: 280px;
+  max-width: 380px;
+}
+
+#oracle-badge {
+  width: 100px;
+  height: auto;
+}
+
+#banner-img {
+  opacity: 0.6;
+}

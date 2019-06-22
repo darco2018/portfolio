@@ -1,62 +1,597 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="no-js">
 
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+  <meta name="author" content="colorlib" />
+  <meta name="description" content="Dariusz Ustrzycki - Java developer - portfolio" />
+  <meta name="keywords" content="Dariusz Ustrzycki Java developer portfolio" />
+  <meta charset="UTF-8" />
+  <title>Dariusz Ustrzycki portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
 
-    <meta name="theme-color" content="#fafafa" />
-  </head>
+  <!-- <link rel="stylesheet" href="stylesheets/linearicons.css" /> was 1st link   -->
+</head>
 
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <div>
-      Hello world! This is HTML5 Boilerplate. If you can't see lightblue
-      background, main.css is not working...
+<body>
+  <div id="top"></div>
+  <!-- Start Preloader Area -->
+  <div class="preloader-area">
+    <div class="loader-box">
+      <div class="loader"></div>
     </div>
+  </div>
+  <!-- End Preloader Area -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
-        );
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Start Header Area -->
+  <header id="header">
+    <div class="container main-menu">
+      <div class="row align-items-center d-flex">
+        <div id="logo">
+          <a href="#top"><img src="public/images/logo.png" alt="" title="" /></a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class=""><a class="active" href="#top">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="menu-has-children">
+              <a href="#">Links</a>
+              <ul>
+                <li>
+                  <a href="https://github.com/darco2018" target="_blank" rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)">Gihhub</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/dariusz-ustrzycki-java-dev/" target="_blank"
+                    rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-has-children">
+              <a href="#">CV</a>
+              <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#job-history">Job history</a></li>
+                <li>
+                  <a href="Dariusz_Ustrzycki_ JavaDev_CV_en.pdf" download>CV download</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Area -->
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function() {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script
-      src="https://www.google-analytics.com/analytics.js"
-      async
-      defer
-    ></script>
-  </body>
+  <!-- start banner Area -->
+  <section class="home-banner-area">
+    <div class="container">
+      <div class="row fullscreen d-flex align-items-center">
+        <div class="banner-content col-lg-6 col-md-12 justify-content-center ">
+          <div id="itsme" class="me wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s">
+            It's me
+          </div>
+          <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s">
+            Dariusz Ustrzycki
+          </h1>
+          <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
+            <span class="developer">Java</span>
+            <span class="designer">developer</span><br />
+            with<br />
+            <span class="developer">frontend</span>
+            skills
+          </div>
+          <a href="#contact" class="primary-btn" data-text="Hire Me">
+            <span>H</span>
+            <span>i</span>
+            <span>r</span>
+            <span>e</span>
+            <span> </span>
+            <span>M</span>
+            <span>e</span>
+          </a>
+        </div>
+        <div class="banner-img col-lg-6 col-md-6 align-self-end">
+          <img id="banner-img" class="img-fluid" src="public/images/banner-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End banner Area -->
+
+  <!-- Start brands Area -->
+  <section class="brands-area">
+    <div class="container">
+      <div class="brand-wrap">
+        <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
+          <div class="col single-brand">
+            <a href="#"><img class="mx-auto" src="public/images/brand/b1.png" alt="" /></a>
+          </div>
+          <div class="col single-brand">
+            <a href="#"><img class="mx-auto" src="public/images/brand/b2.png" alt="" /></a>
+          </div>
+          <div class="col single-brand">
+            <a href="#"><img class="mx-auto" src="public/images/brand/b3.png" alt="" /></a>
+          </div>
+          <div class="col single-brand">
+            <a href="#"><img class="mx-auto" src="public/images/brand/b4.png" alt="" /></a>
+          </div>
+          <div class="col single-brand">
+            <a href="#"><img class="mx-auto" src="public/images/brand/b5.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End brands Area -->
+
+  <!-- Start skills Area -->
+  <section class="about-area section-gap">
+    <div class="container">
+      <div id="skills" class="row align-items-center justify-content-between">
+        <div class="col-lg-6 about-left">
+          <img class="img-fluid" src="public/images/about-img.jpg" alt="" />
+        </div>
+        <div class="col-lg-5 col-md-12 about-right">
+          <div class="section-title">
+            <br />
+            <h2>skills</h2>
+          </div>
+          <h3 class="typo-list">Backend</h3>
+          <div class="mb-50 wow fadeIn" data-wow-duration="1.8s">
+            <ul class="unordered-list">
+              <li>Java EE (servlets, JDBC, JSP, JAX-RS, JPA)</li>
+              <li>
+                Spring Boot, Spring MVC, Spring Data, Spring Security,
+                Hibernate ORM, Hibernate Validation
+              </li>
+              <li>Eclipse, Maven, Git</li>
+              <li>Database design, MySQL, Workbench</li>
+              <li>JUNIT, AssertJ, Mockito,</li>
+            </ul>
+          </div>
+          <h3 class="typo-list">Frontend</h3>
+          <div class="mb-50 wow fadeIn" data-wow-duration="1.8s">
+            <ul class="unordered-list">
+              <li>Java Script, JQuery, HTML, CSS, Bootstrap, JavaFX</li>
+              <li>REST, Jackson, JSON</li>
+              <li>Node.js, Express</li>
+              <li>React, Redux</li>
+              <li>VS Code, npm, webpack</li>
+            </ul>
+          </div>
+          <h3 class="typo-list">General</h3>
+          <div class="mb-50 wow fadeIn" data-wow-duration="1.8s">
+            <ul class="unordered-list">
+              <li>Docker</li>
+              <li>Jenkins</li>
+              <li>Design patterns, OOP, time complexity, SOLID, TDD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End skills Area -->
+
+  <!-- Start projects Area -->
+  <section class="work-area section-gap-top section-gap-bottom-90" id="work">
+    <div class="container">
+      <div id="projects" class="row d-flex justify-content-between align-items-end mb-80">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <br />
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="filters">
+            <ul>
+              <li class="active" data-filter=".all">All Categories</li>
+              <li data-filter=".branding">Branding</li>
+              <li data-filter=".creative">Creative Work</li>
+              <li data-filter=".web-design">Web Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="filters-content">
+        <div class="card-deck d-flex justify-content-around">
+          <!-- CARD 1 -->
+          <div class="card pb-2 mb-3">
+            <div class="card-text text-center">
+              <small class="text-muted text-center">FRONTEND</small>
+            </div>
+            <img class="card-img-top px-3 " src="./public/images/color-game-316-253px.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h4 class="card-title">Rgb Color Game</h4>
+              <p class="card-text">
+                Test your knowledge of RGB. Match a random rgb string with one
+                of the six colors.
+              </p>
+              <h5 class="card-title">Tools & Technologies</h5>
+              <p style="font-size: 0.8rem" class="project__tools  text-uppercase ">
+                html, css, sass <b>/</b> <mark>vanilla java script</mark>
+                <b>/</b> visual studio code <b>/</b> npm, webpack <b>/</b>
+                <span style="font-size: 0.7rem">stylelint, prettier, eslint, babel, browserlist, devServer,
+                  postCSS</span>
+              </p>
+              <h5 class="card-title">Notable features</h5>
+              <ul>
+                <li>Responsive</li>
+                <li>JS modules</li>
+              </ul>
+            </div>
+            <div class="d-inline-flex justify-content-around pb-2">
+              <a href="https://github.com/darco2018/color-game" target="_blank" rel="noreferrer noopener"
+                aria-label="This is an external link (opens in a new tab)" class="primary-btn white ml-3 mr-1"
+                data-text="Code">
+                <span>C</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+              </a>
+              <a href="#" class="primary-btn ml-1 mr-3" data-text="Live">
+                <span>L</span>
+                <span>i</span>
+                <span>v</span>
+                <span>e</span>
+              </a>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="card pb-2 mb-3">
+            <div class="card-text text-center">
+              <small class="text-muted text-center">FRONTEND</small>
+            </div>
+            <img class="card-img-top px-3 " src="./public/images/response-tester-316-253px.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h4 class="card-title">Reaction Tester</h4>
+              <p class="card-text">
+                Tests your reaction time. Click a randomly drawn shape as
+                quickly as possible.
+              </p>
+              <h5 class="card-title">Tools & Technologies</h5>
+              <p style="font-size: 0.8rem" class="project__tools  text-uppercase ">
+                html, css, <mark>sass</mark> <b>/</b> vanilla java script
+                <b>/</b> visual studio code <b>/</b> npm, webpack <b>/</b>
+                <span style="font-size: 0.7rem">stylelint, prettier, eslint, babel, browserlist, devServer,
+                  postCSS</span>
+              </p>
+            </div>
+            <div class="d-inline-flex justify-content-around pb-2">
+              <a href="https://github.com/darco2018/response-tester" target="_blank" rel="noreferrer noopener"
+                aria-label="This is an external link (opens in a new tab)" class="primary-btn white ml-3 mr-1"
+                data-text="Code">
+                <span>C</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+              </a>
+              <a href="#" class="primary-btn ml-1 mr-3" data-text="Live">
+                <span>L</span>
+                <span>i</span>
+                <span>v</span>
+                <span>e</span>
+              </a>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="card pb-2 mb-3">
+            <div class="card-text text-center">
+              <small class="text-muted text-center">FRONTEND</small>
+            </div>
+            <img class="card-img-top px-3 " src="./public/images/code-editor-316-253px.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h4 class="card-title">Code Editor</h4>
+              <p class="card-text">
+                Clone of CodePen.io. Edit html, Java Script and CSS. View a
+                live preview of the code changes.
+              </p>
+              <h5 class="card-title">Tools & Technologies</h5>
+              <p style="font-size: 0.8rem" class="project__tools  text-uppercase ">
+                html, css, sass <b>/</b> vanilla java script <b>/</b> visual
+                studio code <b>/</b> <mark>npm, webpack</mark> <b>/</b>
+                <span style="font-size: 0.7rem">stylelint, prettier, eslint, babel, browserlist, devServer,
+                  postCSS</span>
+              </p>
+            </div>
+            <div class="d-inline-flex justify-content-around pb-2">
+              <a href="https://github.com/darco2018/code-editor" target="_blank" rel="noreferrer noopener"
+                aria-label="This is an external link (opens in a new tab)" class="primary-btn white ml-3 mr-1"
+                data-text="Code">
+                <span>C</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+              </a>
+              <a href="#" class="primary-btn ml-1 mr-3" data-text="Live">
+                <span>L</span>
+                <span>i</span>
+                <span>v</span>
+                <span>e</span>
+              </a>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card pb-2 mb-3">
+            <div class="card-text text-center">
+              <small class="text-muted text-center">FRONTEND</small>
+            </div>
+            <img class="card-img-top px-3 " src="./public/images/todo-list-316-253px.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h4 class="card-title">Todo List</h4>
+              <p class="card-text">
+                Add new todos. Mark them as completed or remove completely..
+              </p>
+              <h5 class="card-title">Tools & Technologies</h5>
+              <p style="font-size: 0.8rem" class="project__tools  text-uppercase ">
+                html, css, sass <b>/</b>java script, <mark>JQuery</mark><b>/</b> visual studio code <b>/</b> npm,
+                webpack <b>/</b>
+                <span style="font-size: 0.7rem">stylelint, prettier, eslint, babel, browserlist, devServer,
+                  postCSS</span>
+              </p>
+              <h5 class="card-title">Notable features</h5>
+              <ul>
+                <li>Responsive</li>
+                <li>JS modules</li>
+              </ul>
+            </div>
+            <div class="d-inline-flex justify-content-around pb-2">
+              <a href="https://github.com/darco2018/todo-list" target="_blank" rel="noreferrer noopener"
+                aria-label="This is an external link (opens in a new tab)" class="primary-btn white ml-3 mr-1"
+                data-text="Code">
+                <span>C</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+              </a>
+              <a href="#" class="primary-btn ml-1 mr-3" data-text="Live">
+                <span>L</span>
+                <span>i</span>
+                <span>v</span>
+                <span>e</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End projects Area -->
+
+  <!-- Start Education  Area -->
+  <section class="job-area section-gap-top section-gap-bottom-90">
+    <div class="container">
+      <div id="education" class="row d-flex">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <br />
+            <h2>Education</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="single-job">
+            <div class="top-sec d-flex justify-content-between">
+              <div class="top-left">
+                <h4>Coders Lab - Java backend course</h4>
+                <p>
+                  <a href="https://coderslab.pl/pl/" target="_blank" rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)">https://coderslab.pl</a>
+                </p>
+              </div>
+            </div>
+            <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+              360 hours of tuition and practical workshopd.<br />
+              Spring, Hibernate, Git, MySql, servlets and more.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="single-job">
+            <div class="top-sec d-flex justify-content-between">
+              <div class="top-left">
+                <h4>Oracle Associate Java SE 8 Programmer</h4>
+                <p>
+                  <a href="https://docs.oracle.com/javase/tutorial/extra/certification/javase-8-programmer1.html"
+                    target="_blank" rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)">https://oracle.com/javase-8-programmer</a>
+                </p>
+              </div>
+              <div class="top-right">
+                <a href="https://docs.oracle.com/javase/tutorial/extra/certification/javase-8-programmer1.html"
+                  target="_blank" rel="noreferrer noopener"
+                  aria-label="This is an external link (opens in a new tab)"><img id="oracle-badge"
+                    src="./public/images/oracle.png" alt="" srcset="" /></a>
+              </div>
+            </div>
+            <div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+              <a href="https://www.youracclaim.com/badges/dbf3ba36-ffc4-4722-8665-a7a4c071aeb6/linked_in_profile"
+                target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                class="genric-btn info-border circle arrow">Verify<span class="lnr lnr-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="single-job">
+            <div class="top-sec d-flex justify-content-between">
+              <div class="top-left">
+                <h4>Coursera</h4>
+                <p>
+                  <a href="https://www.coursera.org" target="_blank" rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)">https://www.coursera.org</a>
+                </p>
+              </div>
+            </div>
+            <div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+              Data structures: Measuring and Optimizing Performance
+              <br /><a href="https://www.coursera.org/account/accomplishments/certificate/29A3CL62SDKS" target="_blank"
+                rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                class="genric-btn info-border circle arrow">Verify<span class="lnr lnr-arrow-right"></span></a>
+              <br />
+              <br />Object Oriented Programming in Java <br /><a
+                href="https://www.coursera.org/account/accomplishments/certificate/BVRGWCA2J468" target="_blank"
+                rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                class="genric-btn info-border circle arrow">Verify<span class="lnr lnr-arrow-right"></span></a>
+              <br />
+              <br />Advanced Data Structures in Java <br /><a
+                href="https://www.coursera.org/account/accomplishments/certificate/TGLJCKXWP8TH" target="_blank"
+                rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                class="genric-btn info-border circle arrow">Verify<span class="lnr lnr-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="single-job">
+            <div class="top-sec d-flex justify-content-between">
+              <div class="top-left">
+                <h4>
+                  English Philology and Teaching English as a Foreign Language
+                  - Master of Arts (M.A.)
+                </h4>
+                <p>Jagiellonian University in Cracow</p>
+              </div>
+            </div>
+            <div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Education Area -->
+
+  <!-- Start Job History Area -->
+  <section class="service-area section-gap">
+    <div class="container">
+      <div id="job-history" class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <br />
+            <h2>Job History</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <span class="lnr lnr-graduation-hat"></span>
+            <h4><span>Teacher</span>of English</h4>
+            <br />
+            <br />
+            <br />
+            <p>
+              freelancer, self-employed
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <span class="lnr lnr-user"></span>
+            <h4><span> Director of Studies </span> in YES Language School</h4>
+            <br>
+            <p>
+              freelancer, self-employed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Job History Area -->
+
+  <!-- Start Contact Area -->
+  <section class="contact-area section-gap">
+    <div class="container">
+      <div id="contact" class="row">
+        <div class="col-lg-12">
+          <div class="contact-title">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-80">
+        <div class="col-lg-4 col-md-4 ">
+          <div class="contact-box ">
+            <h4 class="mx-md-0">+48 506 770 303</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 px-md-0">
+          <div class="contact-box">
+            <h4>job@javacoder.cloud</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-box">
+            <h4>javacoder.cloud</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Area -->
+
+  <!-- start footer Area -->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="footer-top flex-column">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="public/images/logo.png" alt="" />
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom justify-content-center">
+        <p class="col-lg-8 col-sm-12 footer-text">
+          <!-- Template is licensed under CC BY 3.0. -->
+          Copyright &copy; 2019
+          All rights reserved | This template is made by
+          <a href="https://colorlib.com" target="_blank" rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)">Colorlib</a>
+          <!--  -->
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer Area -->
+
+  <!-- ####################### Start Scroll to Top Area ####################### -->
+  <div id="back-top">
+    <a title="Go to Top" href="#top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+  </div>
+  <!-- ####################### End Scroll to Top Area ####################### -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
