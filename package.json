@@ -31,22 +31,22 @@
     "resolveUrlsInCss": "node ./resolve-url.js  ./dist/public/stylesheets  main 'url(../'"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "bootstrap": "^4.3.1",
-    "popper.js": "^1.14.7",
-    "lodash": "^4.17.11"
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "acorn": "^6.1.1",
-    "apache-server-configs": "^3.1.0",
-    "archiver": "^3.0.0",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
+    "acorn": "^6.1.1",
+    "apache-server-configs": "^3.1.0",
+    "archiver": "^3.0.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^2.0.0",
-    "copy-webpack-plugin": "^5.0.3",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^2.1.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
