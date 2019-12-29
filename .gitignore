@@ -3,6 +3,7 @@
 # Custom
 a-private
 node-modules
+dist
 
 # Logs
 logs
