@@ -41,7 +41,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
-    "acorn": "^6.4.0",
+    "acorn": "^6.4.1",
     "apache-server-configs": "^3.1.0",
     "archiver": "^3.1.1",
     "babel-loader": "^8.0.6",
